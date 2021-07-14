@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/siswa','SiswaController@index');
-Route::get('/siswa/tambah','SiswaController@tambah');
-Route::post('/siswa/input','SiswaController@input');
+Route::get('/siswa','StudentController@index');
+Route::get('/siswa/tambah','StudentController@tambah');
+Route::post('/siswa/input','StudentController@create');
 
 //edit
 Route::get('/siswa/edit/{id}','SiswaController@edit');
